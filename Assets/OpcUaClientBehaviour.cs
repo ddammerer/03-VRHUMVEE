@@ -32,8 +32,8 @@ public class OpcUaClientBehaviour : MonoBehaviour
 
         try
         {
-            this.client = new OpcClient("opc.tcp://localhost:4840/");
-            //this.client = new OpcClient("opc.tcp://192.168.1.60:4840");
+            // this.client = new OpcClient("opc.tcp://localhost:4840/");
+            this.client = new OpcClient("opc.tcp://192.168.1.60:4840");
             this.client.Security.UserIdentity = new OpcClientIdentity("opcuser1", ".opcuser1");
 
 
